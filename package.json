@@ -1,0 +1,20 @@
+{
+  "name": "pisco-plugin-inquirer-emit",
+  "version": "0.1.0",
+  "description": "Pisco plugin for inquirer emit",
+  "scripts": {
+    "deps": "npm install"
+  },
+  "keywords": [
+    "piscosour-recipe",
+    "piscosour",
+    "inquirer",
+    "plugin"
+  ],
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "devDependencies": {
+    "piscosour": "^1.0.0"
+  }
+}
