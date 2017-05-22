@@ -17,7 +17,7 @@ describe('this.inquireEmit() addon validation', function() {
 
   it('Should work inquiring configuration', function(done) {
     this.timeout(2000);
-    exec(`echo "valueInquire" | node ${recipeTestFolder}/bin/pisco.js recipe:test-inquire-emit --paramsFile ${recipeTestFolder}/../paramsFile/paramEmitPrompts.json`, {}, function(error, stdout, stderr) {
+    exec(`echo "valueInquire" | node ${recipeTestFolder}/bin/pisco.js context-test:test-inquire-emit --paramsFile ${recipeTestFolder}/../paramsFile/paramEmitPrompts.json`, {}, function(error, stdout, stderr) {
       expect(error).to.equal(null);
       expect(stderr).to.equal('');
       expect(stdout).contain('step1:valueInquire/value2/value3');

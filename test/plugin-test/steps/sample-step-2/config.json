@@ -2,7 +2,5 @@
   "name": "sample-step-2",
   "description": "sample step for test",
   "isGenerator": true,
-  "contexts": [
-    "recipe"
-  ]
+  "contexts": [ "context-test" ]
 }
