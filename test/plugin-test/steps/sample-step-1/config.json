@@ -1,0 +1,8 @@
+{
+  "name": "sample-step-1",
+  "description": "sample step for test",
+  "isGenerator": true,
+  "contexts": [
+    "recipe"
+  ]
+}

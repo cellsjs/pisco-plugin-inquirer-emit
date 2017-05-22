@@ -3,7 +3,8 @@
   "version": "0.1.1-beta.0",
   "description": "Pisco plugin for inquirer emit",
   "scripts": {
-    "deps": "npm install"
+    "deps": "npm install",
+    "test": "node_modules/.bin/mocha"
   },
   "keywords": [
     "piscosour-recipe",
@@ -15,6 +16,7 @@
     "node": ">=4.0.0"
   },
   "devDependencies": {
-    "piscosour": "^1.0.0"
+    "chai": "*",
+    "mocha": "*"
   }
 }

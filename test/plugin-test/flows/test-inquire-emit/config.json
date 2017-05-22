@@ -1,0 +1,10 @@
+{
+  "name": "test-inquire-emit",
+  "description": "test-inquire-emit",
+  "isGenerator": true,
+  "steps": {
+    "emitter": {},
+    "sample-step-1": {},
+    "sample-step-2": {}
+  }
+}

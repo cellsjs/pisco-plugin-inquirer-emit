@@ -1,5 +1,4 @@
 {
-  "name" : "inquirer-emit",
-  "description" : "Inquire and emit configuration",
-  "plugins" : ["inquirer"]
+  "name": "inquirer-emit",
+  "description": "Inquire and emit configuration"
 }

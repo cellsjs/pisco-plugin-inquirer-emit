@@ -1,0 +1,9 @@
+{
+  "name": "emitter",
+  "description": "emitter step",
+  "isGenerator": true,
+  "plugins": [ "inquirer-emit" ],
+  "contexts": [
+    "recipe"
+  ]
+}

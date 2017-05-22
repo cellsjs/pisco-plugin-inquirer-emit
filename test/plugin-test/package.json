@@ -1,0 +1,26 @@
+{
+  "name": "plugin-test",
+  "version": "0.1.0",
+  "description": "recipe to test pisco-plugin-inquirer-emit",
+  "main": "bin/pisco.js",
+  "scripts": {
+    "deps": "npm install",
+    "test": "node_modules/.bin/mocha"
+  },
+  "keywords": [
+    "piscosour-recipe"
+  ],
+  "license": "Apache Licence",
+  "preferGlobal": true,
+  "dependencies": {
+    "pisco-plugin-inquirer-emit": "file:///Users/feliperoucheriglesias/cells-workspace/tools/pisco-plugin-inquirer-emit",
+    "piscosour": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}
