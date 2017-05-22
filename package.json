@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "chai": "*",
-    "mocha": "*"
+    "mocha": "*",
+    "piscosour": "^1.0.0"
   }
 }
