@@ -1,3 +1,7 @@
+[![NPM version](http://img.shields.io/npm/v/pisco-plugin-inquirer-emit.svg)](https://npmjs.org/package/pisco-plugin-inquire-emit)
+[![Build Status](http://img.shields.io/travis/cellsjs/pisco-plugin-inquirer-emit.svg)](https://travis-ci.org/cellsjs/pisco-plugin-inquirer-emit)
+[![licence](http://img.shields.io/npm/l/pisco-plugin-inquirer-emit.svg)](https://github.com/cellsjs/pisco-plugin-inquirer-emit/blob/master/package.json)
+
 # Plugin inquirer-emit
 
 This plugin helps to emit parameters just defining the inquire in your step configuration.
