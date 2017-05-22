@@ -13,7 +13,7 @@
   "license": "Apache Licence",
   "preferGlobal": true,
   "dependencies": {
-    "pisco-plugin-inquirer-emit": "file:///Users/feliperoucheriglesias/cells-workspace/tools/pisco-plugin-inquirer-emit",
+    "pisco-plugin-inquirer-emit": "../..",
     "piscosour": "^1.0.0"
   },
   "devDependencies": {

@@ -5,5 +5,18 @@
   "plugins": [ "inquirer-emit" ],
   "contexts": [
     "recipe"
-  ]
+  ],
+  "emitPrompts": [ {
+    "type": "input",
+    "name": "param1",
+    "message": "What is the value of param1"
+  }, {
+    "type": "input",
+    "name": "param2",
+    "message": "What is the value of param2"
+  }, {
+    "type": "input",
+    "name": "param3",
+    "message": "What is the value of param3"
+  } ]
 }

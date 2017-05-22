@@ -4,7 +4,19 @@
   "isGenerator": true,
   "steps": {
     "emitter": {},
-    "sample-step-1": {},
-    "sample-step-2": {}
+    "sample-step-1": {
+      "inputs" : {
+        "param1" : { "emitter": "param1" },
+        "param2" : { "emitter": "param2" },
+        "param3" : { "emitter": "param3" }
+      }
+    },
+    "sample-step-2": {
+      "inputs" : {
+        "param1" : { "emitter": "param1" },
+        "param2" : { "emitter": "param2" },
+        "param3" : { "emitter": "param3" }
+      }
+    }
   }
 }

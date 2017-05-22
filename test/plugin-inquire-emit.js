@@ -11,15 +11,17 @@ describe('this.inquireEmit() addon validation', function() {
   this.timeout(60000);
 
   before(function(done) {
-    execSync('npm install --save --force ../.. --loglevel=error', { cwd: recipeTestFolder });
+    execSync('npm install --force ../.. --loglevel=error', { cwd: recipeTestFolder });
     done();
   });
 
   it('Should work inquiring configuration', function(done) {
-    exec(`node ${recipeTestFolder}/bin/pisco.js recipe:test-inquire-emit`, {}, function(error, stdout, stderr) {
+    this.timeout(2000);
+    exec(`echo "valueInquire" | node ${recipeTestFolder}/bin/pisco.js recipe:test-inquire-emit --paramsFile ${recipeTestFolder}/../paramsFile/paramEmitPrompts.json`, {}, function(error, stdout, stderr) {
       expect(error).to.equal(null);
       expect(stderr).to.equal('');
-      expect(stdout).contain('check');
+      expect(stdout).contain('step1:valueInquire/value2/value3');
+      expect(stdout).contain('step2:valueInquire/value2/value3');
 
       done();
     });

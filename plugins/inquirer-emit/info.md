@@ -1,10 +1,9 @@
 # Plugin inquirer-emit
 
-This plugin helps to emit parmameters just defining the inquire in your step configuration.
+This plugin helps to emit parameters just defining the inquire in your step configuration.
 
 1. [check() hook](#check)
 1. [emit() hook](#emit)
-1. [inquireEmit() addon](#inquireEmit)
 
 ## Using this plugin
 
@@ -91,18 +90,3 @@ Example:
 
 This will emit two paramaters `param1` and `param2`.
 
-## <a name="inquireEmit"></a>inquireEmit addon
-
-`this.inquireEmit(param1)` attemps to show a message with `param1` parameter.
-
-| Param | Type | Description |
-| --- | --- | --- |
-| param1 | Object | description1 |
-
-Example:
-
-```javascript
-run: function() {
-  let contain = this.inquireEmit('sample');
-}
-```
