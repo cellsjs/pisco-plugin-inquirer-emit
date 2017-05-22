@@ -29,3 +29,5 @@ node_modules
 test-reports
 
 test/testB*
+
+scullion.json
