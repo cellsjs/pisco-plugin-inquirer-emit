@@ -40,6 +40,18 @@ Example `recipe/steps/step-name/config.json`:
 } ]
 ```
 
+4. **Emit on your step the result of this.inquirerEmit()**
+
+Example `recipe/steps/step-name/index.js`:
+
+```javascript
+module.exports = {
+  emit() {
+    return this.inquirerEmit();
+  }
+};
+```
+
 ## <a name="check"></a>check() hook
 
 When a "emitPrompts" configuration has been defined, then inquire parameters.
@@ -67,9 +79,9 @@ This shows a message like this.
 Inquiring 'emitPrompts' configuration...
 ```
 
-## <a name="emit"></a>emit() hook
+## <a name="emit"></a>inquirerEmit() addon
 
-Emit all inquired parameters to rest of the flow. Parameters are going to be availables on this.params.
+Return an object with all inquired parameters to rest of the flow. Parameters are going to be availables on this.params.
 
 Example:
 
@@ -88,5 +100,5 @@ Example:
 } ]
 ```
 
-This will emit two paramaters `param1` and `param2`.
+This will return an object with the two paramaters `param1` and `param2`.
 
