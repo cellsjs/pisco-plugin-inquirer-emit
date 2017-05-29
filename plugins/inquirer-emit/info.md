@@ -3,7 +3,7 @@
 This plugin helps to emit parameters just defining the inquire in your step configuration.
 
 1. [check() hook](#check)
-1. [emit() hook](#emit)
+1. [inquirerEmit() addon](#emit)
 
 ## Using this plugin
 
