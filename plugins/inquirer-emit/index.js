@@ -9,12 +9,16 @@ module.exports = {
     }
   },
 
-  emit() {
-    let ret = {};
-    if (this.params.emitPrompts && !this.params.disablePrompts) {
-      this.logger.trace('#white', 'emitting emitPrompts params...');
-      this.params.emitPrompts.map((param) => { ret[param.name] = this.params[param.name] });
+  addons : {
+    inquirerEmit() {
+      let ret = {};
+      if (this.params.emitPrompts && !this.params.disablePrompts) {
+        this.logger.trace('#white', 'emitting emitPrompts params...');
+        this.params.emitPrompts.map((param) => {
+          ret[param.name] = this.params[param.name];
+        });
+      }
+      return ret;
     }
-    return ret;
   }
 };
