@@ -17,7 +17,7 @@ describe('this.inquireEmit() addon validation', function() {
   });
 
   it('Should work inquiring configuration', function(done) {
-    this.timeout(2000);
+    this.timeout(3000);
     pctp.c2p(exec, 'npm config get prefix', {})
       .then((stdout) => Promise.resolve(`${stdout.trim()}/lib/node_modules/plugin-test/bin/pisco.js`))
       .then((pisco) => {
